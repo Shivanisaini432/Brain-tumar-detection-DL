@@ -115,7 +115,7 @@ print(f"Predicted Tumor Type: {result}")
 
 🧮 How to Run the Project
 1️⃣ Clone the Repository
-git clone https://github.com/Shivanisaini432/Brain-Tumor-Detection.git
+git clone https://github.com/Shivanisaini432/Brain-tumar-detection-DL.git
 cd Brain-Tumor-Detection
 
 2️⃣ Install Required Libraries
