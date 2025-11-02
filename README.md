@@ -8,20 +8,14 @@ The goal is to assist in the early and accurate diagnosis of tumors, reducing hu
 Pre-trained CNN architectures like VGG16, ResNet50, and MobileNetV2 were implemented and compared.
 After performance evaluation, MobileNetV2 achieved the highest accuracy and was finalized as the main model.
 
-🎯 Objective
-
+🎯 Objective :
 To classify MRI brain images into four categories: glioma, meningioma, pituitary, and no tumor.
-
 To utilize transfer learning for faster training and improved accuracy.
-
 To compare different CNN architectures and visualize model performance.
-
 To enable single image tumor detection for real-time testing.
 
-🧩 Dataset Description
-
+🧩 Dataset Description :
 The dataset used in this project is a Brain MRI Dataset, which contains labeled MRI scans of the human brain.
-
 Structure:
 
 Brain Tumor MRI/
@@ -41,26 +35,21 @@ Brain Tumor MRI/
 
 Each image is resized to 128×128 pixels before training.
 
-⚙️ Technologies Used
+⚙️ Technologies Used :
 Category	Tools / Libraries
 Language	Python
 Frameworks	TensorFlow, Keras
 Data Handling	NumPy, scikit-learn, Pillow
 Visualization	Matplotlib, Seaborn
 Models Used	VGG16, ResNet50, MobileNetV2
-🧠 Model Details
+
+🧠 Model Details:
 📘 Architecture:
-
 Base Model: MobileNetV2 (Pre-trained on ImageNet)
-
 Layers Added:
-
 Flatten
-
 Dense (128 neurons, ReLU)
-
 Dropout (0.3 & 0.2 for regularization)
-
 Output Layer (Softmax – 4 classes)
 
 ⚙️ Hyperparameters:
@@ -71,28 +60,26 @@ Learning Rate	0.0001
 Loss Function	Sparse Categorical Crossentropy
 Epochs	10
 Batch Size	20
-📊 Model Comparison
+
+📊 Model Comparison :
 Model	Accuracy	Remarks
 VGG16	Good	Slower, more parameters
 ResNet50	not Good	Deeper network, complex
 MobileNetV2	Best	Lightweight, fast, accurate ✅
-📈 Performance Visualization
 
+📈 Performance Visualization :
 Accuracy & Loss Curves for each model
-
 Confusion Matrix Heatmaps to evaluate predictions
-
 ROC Curves & AUC Scores for multi-class evaluation
-
 Classification Reports showing precision, recall & F1-score
 
-📈 Results Summary
+📈 Results Summary :
 Model	Accuracy (%)	Observations
 VGG16	96.72	Good performance, slower convergence
 ResNet50	75.29	Stable and slower
 MobileNetV2	96.87	Best performing and fastest model
 
-🖼️ Single Image Prediction
+🖼️ Single Image Prediction :
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.image import load_img, img_to_array
 import numpy as np
@@ -122,7 +109,6 @@ cd Brain-Tumor-Detection
 pip install -r requirements.txt
 
 3️⃣ Add Dataset
-
 Place the dataset folders inside your project directory.
 
 4️⃣ Train Models
@@ -134,7 +120,7 @@ python evaluate_models.py
 6️⃣ Predict a Single MRI Image
 python predict_single_image.py
 
-🧾 Requirements
+🧾 Requirements :
 tensorflow
 numpy
 matplotlib
@@ -143,23 +129,15 @@ pillow
 scikit-learn
 
 
-
-🔮 Future Enhancements
-
+🔮 Future Enhancements :
 Build a Web Interface using Flask or Streamlit
-
 Integrate Grad-CAM Visualization for explainable AI
-
 Enable real-time tumor detection from webcam input
-
 Extend dataset for more tumor subtypes
 
-📚 References
-
+📚 References :
 TensorFlow & Keras Documentation
-
 ImageNet Pre-trained Models (VGG16, ResNet50, MobileNetV2)
-
 Brain MRI Dataset (Kaggle / Public Repositories)
 
 ✨ This project demonstrates how transfer learning can be effectively used to classify medical images and assist in brain tumor diagnosis.
