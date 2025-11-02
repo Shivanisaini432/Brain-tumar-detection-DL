@@ -108,23 +108,21 @@ Each image is resized to **128×128 pixels** before training.
 
 ---
 
-📈 Results Summary
-🧠 Model	🎯 Accuracy (%)	💬 Observations
-VGG16	96.72	Good performance, slower convergence
-ResNet50	75.2	Stable and balanced results
-MobileNetV2	🏆 96.8	Best performing and fastest model
+### 📈 Results Summary  
+
+| 🧠 Model | 🎯 Accuracy (%) | 💬 Observations |
+|:---------:|:---------------:|:----------------|
+| **VGG16** | 96.72 | Good performance, slower convergence |
+| **ResNet50** | 75.29 | Stable and balanced results |
+| **MobileNetV2** | 🏆 **96.87** | Best performing and fastest model |
 
 
-
-
-🧾 Requirements:
-tensorflow
-numpy
-matplotlib
-seaborn
-pillow
-scikit-learn
-
+tensorflow  
+numpy  
+matplotlib  
+seaborn  
+pillow  
+scikit-learn  
 
 
 🔮 Future Enhancements:
